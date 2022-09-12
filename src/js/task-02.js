@@ -8,12 +8,14 @@ const ingredients = [
 ];
 const list = document.querySelector('#ingredients');
 
-ingredients.map(element => {
+const elements = ingredients.map(element => {
   const listItem = document.createElement('li');
 
   listItem.textContent = element;
   listItem.classList.add('item');
+  console.log('~ listItem', listItem);
 
-  // todo Доробити відправлення всого за раз
-  list.append(listItem);
+  return listItem;
 });
+
+list.append(...elements);

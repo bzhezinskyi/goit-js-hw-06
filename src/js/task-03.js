@@ -15,7 +15,7 @@ const images = [
 
 const list = document.querySelector('.gallery');
 
-images.map(elem => {
+const elements = images.map(elem => {
   const image = document.createElement('img');
 
   image.alt = elem.alt;
@@ -23,8 +23,7 @@ images.map(elem => {
   image.classList.add('gallery__image');
   console.log('~ image', image);
 
-  // todo Доробити відправлення всого за раз
-  list.append(image);
+  return image;
 });
 
-console.log(111);
+list.append(...elements);
