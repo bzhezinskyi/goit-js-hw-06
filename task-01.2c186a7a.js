@@ -1,2 +1,0 @@
-!function(){var e=document.querySelector("#categories");console.log("Number of categories: ".concat(e.children.length));var t=!0,l=!1,o=void 0;try{for(var n,r=e.children[Symbol.iterator]();!(t=(n=r.next()).done);t=!0){var c=n.value;console.log("Category: ".concat(c.firstElementChild.textContent)),console.log("Elements: ".concat(c.lastElementChild.querySelectorAll("li").length))}}catch(e){l=!0,o=e}finally{try{t||null==r.return||r.return()}finally{if(l)throw o}}}();
-//# sourceMappingURL=task-01.2c186a7a.js.map
