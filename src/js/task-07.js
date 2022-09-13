@@ -3,7 +3,7 @@ const refs = {
   text: document.querySelector('#text'),
 };
 
-refs.control.addEventListener('change', onControlChange);
+refs.control.addEventListener('input', onControlChange);
 
 function onControlChange(event) {
   const fontSize = `${event.currentTarget.value}px`;

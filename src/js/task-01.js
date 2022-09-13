@@ -1,10 +1,14 @@
-const categories = document.querySelector('#categories');
+const categories = document.querySelector('#categories').children;
 
-console.log(`Number of categories: ${categories.children.length}`);
+listItem(categories);
 
-categories.children.map(item => {
-  console.log(`Category: ${item.firstElementChild.textContent}`);
-  console.log(
-    `Elements: ${item.lastElementChild.querySelectorAll('li').length}`
-  );
-});
+function listItem(object) {
+  console.log(`Number of categories: ${object.length}`);
+
+  for (const item of object) {
+    console.log(`Category: ${item.firstElementChild.textContent}`);
+    console.log(
+      `Elements: ${item.lastElementChild.querySelectorAll('li').length}`
+    );
+  }
+}

@@ -8,5 +8,4 @@ input.addEventListener('blur', () => {
   }
   input.classList.remove('valid');
   input.classList.add('invalid');
-  return;
 });

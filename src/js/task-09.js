@@ -4,6 +4,7 @@ document
 
 function onBodyBackgroundColor() {
   document.body.style.backgroundColor = getRandomHexColor();
+  document.querySelector('.color').textContent = getRandomHexColor();
 }
 
 function getRandomHexColor() {
