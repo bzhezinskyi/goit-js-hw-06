@@ -1,0 +1,2 @@
+!function(e){console.log("Number of categories: ".concat(e.length));var t=!0,l=!1,o=void 0;try{for(var n,r=e[Symbol.iterator]();!(t=(n=r.next()).done);t=!0){var c=n.value;console.log("Category: ".concat(c.firstElementChild.textContent)),console.log("Elements: ".concat(c.lastElementChild.querySelectorAll("li").length))}}catch(e){l=!0,o=e}finally{try{t||null==r.return||r.return()}finally{if(l)throw o}}}(document.querySelector("#categories").children);
+//# sourceMappingURL=task-01.29948ca9.js.map
